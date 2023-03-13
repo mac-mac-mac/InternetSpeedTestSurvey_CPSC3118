@@ -46,4 +46,10 @@
         btnEnterSpeed.Enabled = False
 
     End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        lstSpeeds.Items.Clear()
+        lblAverageSpeed.Text = ""
+        btnEnterSpeed.Enabled = True
+    End Sub
 End Class

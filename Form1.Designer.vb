@@ -26,6 +26,7 @@ Partial Class Form1
         Me.btnEnterSpeed = New System.Windows.Forms.Button()
         Me.lstSpeeds = New System.Windows.Forms.ListBox()
         Me.lblAverageSpeed = New System.Windows.Forms.Label()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -67,10 +68,18 @@ Partial Class Form1
         Me.lblAverageSpeed.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAverageSpeed.Location = New System.Drawing.Point(405, 405)
         Me.lblAverageSpeed.Name = "lblAverageSpeed"
-        Me.lblAverageSpeed.Size = New System.Drawing.Size(196, 19)
+        Me.lblAverageSpeed.Size = New System.Drawing.Size(0, 19)
         Me.lblAverageSpeed.TabIndex = 3
-        Me.lblAverageSpeed.Text = "Average Internet Speed: "
-        Me.lblAverageSpeed.Visible = False
+        '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(653, 358)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(120, 27)
+        Me.btnClear.TabIndex = 4
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -79,6 +88,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.InternetSpeedTestSurvey_CPSC3118.My.Resources.Resources.speed
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.lblAverageSpeed)
         Me.Controls.Add(Me.lstSpeeds)
         Me.Controls.Add(Me.btnEnterSpeed)
@@ -94,4 +104,5 @@ Partial Class Form1
     Friend WithEvents btnEnterSpeed As Button
     Friend WithEvents lstSpeeds As ListBox
     Friend WithEvents lblAverageSpeed As Label
+    Friend WithEvents btnClear As Button
 End Class
