@@ -94,6 +94,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnEnterSpeed)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Internet Speed Test Survey for Home Users"
         Me.ResumeLayout(False)
         Me.PerformLayout()
